@@ -52,11 +52,11 @@ Check the [software design documentation](docs/software_design.md) for an in-dep
         /Presentation-Polisher
         │
         ├── /docs                          # Documentation related to the project
-        │   ├── project_overview.md         # High-level project description and goals
-        │   ├── hardware_design.md          # Schematic diagrams, PCB designs
-        │   ├── software_design.md          # Detailed software architecture
-        │   ├── machine_learning.md         # ML model training and deployment
-        │   └── troubleshooting.md          # Debugging tips, issues, and solutions
+        │   ├── [project_overview.md](docs/project_overview.md)         # High-level project description and goals
+        │   ├── [hardware_design.md](docs/hardware_design.md)          # Schematic diagrams, PCB designs
+        │   ├── [software_design.md](docs/software_design.md)          # Detailed software architecture
+        │   ├── [machine_learning.md](docs/machine_learning.md)         # ML model training and deployment
+        │   └── [troubleshooting.md](docs/troubleshooting.md)          # Debugging tips, issues, and solutions
         │
         ├── /hardware                       # Hardware-related files
         │   ├── /schematics                 # Circuit diagrams, electrical schematics
@@ -65,18 +65,18 @@ Check the [software design documentation](docs/software_design.md) for an in-dep
         │
         ├── /software                       # Source code for the embedded system
         │   ├── /src                        # Main source files
-        │   │   ├── main.c                  # Main program entry point
-        │   │   ├── filler_counter.c           # Logic to detect "um" and "uh" and process speech
-        │   │   ├── signal_processing.c     # Analog signal processing functions
-        │   │   └── ml_inference.c          # Machine learning model inference and predictions
+        │   │   ├── [main.c](software/src/main.c)                  # Main program entry point
+        │   │   ├── [filler_counter.c](software/src/filler_counter.c)           # Logic to detect "um" and "uh" and process speech
+        │   │   ├── [signal_processing.c](software/src/signal_processing.c)     # Analog signal processing functions
+        │   │   └── [ml_inference.c](software/src/ml_inference.c)          # Machine learning model inference and predictions
         │   │
         │   ├── /include                    # Header files
-        │   │   ├── filler_counter.h           # Function declarations for disfluency detection
-        │   │   ├── signal_processing.h     # Header for signal processing
-        │   │   └── ml_inference.h          # Header for ML-related functions
+        │   │   ├── [filler_counter.h](software/include/filler_counter.h)           # Function declarations for disfluency detection
+        │   │   ├── [signal_processing.h](software/include/signal_processing.h)     # Header for signal processing
+        │   │   └── [ml_inference.h](software/include/ml_inference.h)          # Header for ML-related functions
         │   │
         │   ├── /lib                        # External libraries (e.g., ML library, signal processing)
-        │   │   └── ml_model                # Pretrained model files (e.g., .h or .bin)
+        │   │   └── /ml_model                # Pretrained model files (e.g., .h or .bin)
         │   │
         │   └── /build                      # Build folder (generated during compilation)
         │       ├── /debug                  # Debug build output
@@ -85,28 +85,28 @@ Check the [software design documentation](docs/software_design.md) for an in-dep
         ├── /test                           # Unit tests and mock hardware test scripts
         │   ├── /unit_tests                 # Unit tests for the functions
         │   ├── /mock_hardware              # Mock hardware simulations for testing
-        │   └── /test_report.md             # Test cases, results, and analysis
+        │   └── [test_report.md](test/test_report.md)             # Test cases, results, and analysis
         │
         ├── /scripts                        # Useful scripts for project automation
-        │   ├── build.sh                    # Build script (e.g., for setting up the toolchain)
-        │   ├── flash_device.sh              # Script to flash the PIC microcontroller
-        │   └── train_model.py               # Python script for training the ML model
+        │   ├── [build.sh](scripts/build.sh)                    # Build script (e.g., for setting up the toolchain)
+        │   ├── [flash_device.sh](scripts/flash_device.sh)              # Script to flash the PIC microcontroller
+        │   └── [train_model.py](scripts/train_model.py)               # Python script for training the ML model
         │
         ├── /config                         # Configuration files
-        │   ├── /pin_mapping.h              # Pinout and hardware configuration settings
-        │   ├── /device_config.h            # Microcontroller-specific settings
-        │   └── /ml_config.h                # Configuration for the machine learning model
+        │   ├── [pin_mapping.h](config/pin_mapping.h)              # Pinout and hardware configuration settings
+        │   ├── [device_config.h](config/device_config.h)            # Microcontroller-specific settings
+        │   └── [ml_config.h](config/ml_config.h)                # Configuration for the machine learning model
         │
         ├── /docs/model_training            # Specific directory for model training files
-        │   ├── training_data.csv           # Raw training data (audio features)
-        │   ├── model_code.py               # Python code to preprocess data and train models
-        │   ├── trained_model.h             # Exported model in embedded format
-        │   └── evaluation_results.md       # Metrics and evaluation of trained model
+        │   ├── [training_data.csv](docs/model_training/training_data.csv)           # Raw training data (audio features)
+        │   ├── [model_code.py](docs/model_training/model_code.py)               # Python code to preprocess data and train models
+        │   ├── [trained_model.h](docs/model_training/trained_model.h)             # Exported model in embedded format
+        │   └── [evaluation_results.md](docs/model_training/evaluation_results.md)       # Metrics and evaluation of trained model
         │
-        └── README.md                       # Overview of the project, installation steps, etc.
+        └── [README.md](README.md)                       # Overview of the project, installation steps, etc.
 </details>
-## Getting Started
 
+---
 ## Getting started:
 To get started with the Presentation Polisher, you’ll need the following:
 
