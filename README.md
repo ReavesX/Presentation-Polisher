@@ -118,6 +118,7 @@ To get started with the Presentation Polisher, you’ll need the following:
 ### **Installation**
 
 1.) Clone the repository:
+   
    bash
    ```git clone https://github.com/yourusername/Presentation-Polisher.git```
 2.) Build the project:
